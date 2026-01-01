@@ -6,18 +6,23 @@
 		<li id="dashboard" class="active"><a href="dashboard.php">Dashboard</a></li>
 		<li id="doctor"><a href="doctor.php">Doctors</a></li>
 		<li id="patient"><a href="patient.php">Patients</a></li> 
-		<li id="appointment"><a href="appointment.php">Appointments</a></li>		
+		<li id="appointment"><a href="appointment.php">Appointments</a></li>
+		<li id="ai_symptom"><a href="ai_symptom_checker.php">🤖 AI Symptom Checker</a></li>
+		<li id="vital_signs"><a href="vital_signs.php">📊 Vital Signs</a></li>		
 	<?php } ?>
 	
 	<?php if($_SESSION["role"] == 'doctor') { ?>
 		<li id="doctor" class="active"><a href="doctor.php">Doctor</a></li>	
 		<li id="patient" class="active"><a href="patient.php">Patient</a></li>
-		<li id="appointment"><a href="appointment.php">Appointments</a></li>		
+		<li id="appointment"><a href="appointment.php">Appointments</a></li>
+		<li id="vital_signs"><a href="vital_signs.php">📊 Vital Signs</a></li>		
 	<?php } ?>
 	
 	<?php if($_SESSION["role"] == 'patient') { ?>
 		<li id="patient" class="active"><a href="patient.php">Patient</a></li>
-		<li id="appointment"><a href="appointment.php">Appointments</a></li>		
+		<li id="appointment"><a href="appointment.php">Appointments</a></li>
+		<li id="ai_symptom"><a href="ai_symptom_checker.php">🤖 AI Symptom Checker</a></li>
+		<li id="vital_signs"><a href="vital_signs.php">📊 My Vital Signs</a></li>		
 	<?php } ?>
 
 </ul>
