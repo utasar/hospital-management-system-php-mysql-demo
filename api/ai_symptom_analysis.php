@@ -27,7 +27,12 @@ switch ($action) {
             exit();
         }
         
-        $symptoms = $_POST['symptoms'];
+        // Sanitize and validate input
+        $symptoms = is_array($_POST['symptoms']) ? $_POST['symptoms'] : $_POST['symptoms'];
+        if (is_string($symptoms)) {
+            $symptoms = htmlspecialchars(strip_tags($symptoms), ENT_QUOTES, 'UTF-8');
+        }
+        
         $patientId = $_SESSION['userid'];
         
         $result = $aiAnalyzer->analyzeSymptoms($symptoms, $patientId);

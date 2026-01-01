@@ -16,7 +16,10 @@ class DataEncryption {
         // In production, this should come from environment variables or secure config
         $key = getenv('ENCRYPTION_KEY');
         if (!$key) {
-            // Fallback to a default key (should be changed in production)
+            // For production, throw an exception instead of using a fallback
+            // For development/demo purposes, we use a default key
+            // TODO: In production, set ENCRYPTION_KEY environment variable
+            error_log('WARNING: Using default encryption key. Set ENCRYPTION_KEY environment variable for production use.');
             $key = 'HMS_SECURE_KEY_2024_CHANGE_IN_PRODUCTION_12345678';
         }
         return hash('sha256', $key, true);
@@ -31,7 +34,8 @@ class DataEncryption {
         }
         
         $ivLength = openssl_cipher_iv_length($this->cipher);
-        $iv = openssl_random_pseudo_bytes($ivLength);
+        // Use random_bytes() for cryptographically secure random bytes (PHP 7+)
+        $iv = random_bytes($ivLength);
         
         $encrypted = openssl_encrypt(
             $data,
