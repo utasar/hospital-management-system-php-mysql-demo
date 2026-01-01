@@ -26,11 +26,14 @@ if(!empty($_POST["login"]) && !empty($_POST["email"]) && !empty($_POST["password
 }
 include('inc/header.php');
 ?>
-<title>webdamn.com : Demo Hospital Management System with PHP and MySQL</title>
+<title>AI Dr. Care - AI-Powered Hospital Management System</title>
 <?php include('inc/container.php');?>
 <div class="content"> 
 	<div class="container-fluid">
-		<h2>Example: Hospital Management System with PHP and MySQL</h2>			
+		<h2>AI Dr. Care - Intelligent Healthcare Management</h2>
+		<p style="font-size: 16px; color: #666; margin-bottom: 20px;">
+			🤖 Experience the future of healthcare with AI-powered symptom analysis, vital signs monitoring, and smart doctor recommendations
+		</p>
         <div class="col-md-6">                    
 		<div class="panel panel-info">
 			<div class="panel-heading" style="background:#00796B;color:white;">

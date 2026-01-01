@@ -1,0 +1,95 @@
+# AI Dr. Care - Git Ignore File
+
+# Dependencies
+node_modules/
+vendor/
+ai_services/ml_service/venv/
+ai_services/ml_service/__pycache__/
+*.pyc
+
+# Environment and Configuration
+.env
+.env.local
+config/local.php
+
+# Uploads and User Data
+uploads/medical_reports/*
+!uploads/medical_reports/.gitkeep
+uploads/temp/*
+!uploads/temp/.gitkeep
+
+# Logs
+logs/*.log
+logs/*.txt
+*.log
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Temporary Files
+tmp/
+temp/
+*.tmp
+*.bak
+*.old
+
+# Database
+*.sql.gz
+*.sql.bak
+database/backups/
+
+# Security
+.htpasswd
+*.pem
+*.key
+*.crt
+encryption_keys.txt
+
+# Cache
+cache/
+*.cache
+
+# Session Files
+sessions/
+*.sess
+
+# Build Files
+dist/
+build/
+
+# Package Manager
+composer.lock
+package-lock.json
+yarn.lock
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+
+# Python specific
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+
+# ML Models (if large)
+ai_services/ml_service/models/*.pkl
+ai_services/ml_service/models/*.h5
+ai_services/ml_service/models/*.pb
