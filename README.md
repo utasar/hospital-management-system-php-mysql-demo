@@ -1,10 +1,10 @@
 # AI Dr. Care - AI-Powered Hospital Management System
 
-## 🏥 Overview
+##  Overview
 
 AI Dr. Care is an advanced, AI-powered hospital management system that transforms traditional healthcare management into an intelligent, interactive healthcare assistant. The system provides AI-based diagnostics, symptom analysis, doctor recommendations, and comprehensive patient health monitoring.
 
-## ✨ Key Features
+##  Key Features
 
 ### 1. AI Symptom Analysis
 - **Interactive Symptom Checker**: Patients can select symptoms from categorized lists or enter custom symptoms
@@ -41,7 +41,7 @@ AI Dr. Care is an advanced, AI-powered hospital management system that transform
 - **GDPR Support**: Patient consent management and data export capabilities
 - **Secure API**: All API endpoints require authentication
 
-## 🚀 New Pages & Features
+##  New Pages & Features
 
 ### For Patients
 1. **AI Symptom Checker** (`ai_symptom_checker.php`)
@@ -61,7 +61,7 @@ AI Dr. Care is an advanced, AI-powered hospital management system that transform
 - View AI diagnosis history for better consultation
 - Enhanced patient records with medical reports
 
-## 📊 Database Schema
+##  Database Schema
 
 New tables added:
 - `hms_ai_diagnosis`: Stores AI symptom analysis results
@@ -72,7 +72,7 @@ New tables added:
 - `hms_patient_consent`: Patient consent management
 - `hms_medical_reports`: Medical documents and reports
 
-## 🔧 Technical Architecture
+## Technical Architecture
 
 ### Backend (PHP)
 - **AISymptomAnalyzer.php**: AI symptom analysis engine
@@ -91,7 +91,7 @@ New tables added:
 - Dynamic chart rendering (Chart.js)
 - Responsive UI components
 
-## 🛠️ Installation & Setup
+##  Installation & Setup
 
 ### Prerequisites
 - PHP 7.4 or higher
@@ -118,7 +118,7 @@ Ensure proper permissions for:
 - `/uploads` directory (for medical reports)
 - `/logs` directory (for audit logs)
 
-## 🔐 Security Features
+##  Security Features
 
 ### Data Encryption
 - All sensitive patient data is encrypted using AES-256-CBC
@@ -135,7 +135,7 @@ Ensure proper permissions for:
 - Role-based access control (Admin, Doctor, Patient)
 - Secure password hashing (MD5 - should be upgraded to bcrypt in production)
 
-## 📈 AI & Machine Learning
+##  AI & Machine Learning
 
 ### Current Implementation
 The system currently uses a **rule-based AI** system for symptom analysis:
@@ -150,7 +150,7 @@ The architecture is designed to support:
 - Natural Language Processing for symptom description
 - Predictive analytics for health outcomes
 
-## 🌍 Location Services Integration
+##  Location Services Integration
 
 ### Google Maps API (Ready for Integration)
 The doctor recommendation system is prepared for:
@@ -164,7 +164,7 @@ To enable:
 2. Add latitude/longitude to doctor records
 3. Integrate Maps JavaScript API in doctor recommendation page
 
-## 📱 Responsive Design
+##  Responsive Design
 
 The interface is fully responsive and works on:
 - Desktop computers
@@ -172,7 +172,7 @@ The interface is fully responsive and works on:
 - Mobile phones
 - Different screen sizes and orientations
 
-## 🧪 Testing
+##  Testing
 
 ### Manual Testing Checklist
 - [ ] Login as patient and access AI Symptom Checker
@@ -183,7 +183,7 @@ The interface is fully responsive and works on:
 - [ ] Verify data encryption for sensitive fields
 - [ ] Test responsive design on mobile devices
 
-## 🔮 Future Enhancements
+##  Future Enhancements
 
 1. **Advanced AI Models**
    - Integration with medical AI APIs (IBM Watson Health, Google Health API)
@@ -205,14 +205,14 @@ The interface is fully responsive and works on:
    - Push notifications for appointments
    - Offline mode for basic features
 
-## 📄 License
+
 
 This is a demonstration project. For production use, ensure compliance with:
 - HIPAA (Health Insurance Portability and Accountability Act)
 - GDPR (General Data Protection Regulation)
 - Local healthcare regulations
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Areas for improvement:
 - Enhanced AI algorithms
@@ -221,17 +221,17 @@ Contributions are welcome! Areas for improvement:
 - Multilingual support
 - Accessibility improvements
 
-## 📞 Support
+##  Support
 
 For issues or questions:
 1. Check the documentation
 2. Review existing issues
 3. Create a new issue with detailed information
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 **Important**: This AI-powered symptom checker is designed to assist healthcare providers and patients, but it is NOT a replacement for professional medical advice, diagnosis, or treatment. Always consult with qualified healthcare professionals for medical decisions.
 
 ---
 
-**AI Dr. Care** - Transforming Healthcare with Artificial Intelligence 🤖💚
+**AI Dr. Care** - Transforming Healthcare with Artificial Intelligence 
